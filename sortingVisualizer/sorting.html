@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <script src="./sorting.js" defer></script>
+    <link rel="stylesheet" href="./sorting.css">
+</head>
+<body>
+    <div id="container"> </div>
+    <div id="controls">
+        <span>
+            <label for="elementCount">Number of elements :</label>
+            <input id="elementCount" type="range" min="3" max="100" value="10" onchange="sorter.updateCount(this.value)" />
+        </span>
+        <span>
+            <label for="enableVisuals">Visual feedback :</label>
+            <input id="enableVisuals" type="checkbox" onchange="sorter.visualsEnabled = this.checked" checked/>
+        </span>
+        <span>
+            <button class="button" id="fastForward" onclick="sorter.visualsEnabled=false; sorter.fastForward=true;">Fast Forward</button>
+        </span>
+        <span>
+            <button 
+                id="sortButton" 
+                class="button" 
+                onclick="sorter.bubbleSort().then(res=>console.log('Bubble Sort', res))">
+                Bubble Sort
+            </button>
+        </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+  margin: 0 auto;
+  width: calc(min(90vw, 1200px));
+  --control-height: min(33vh, 150px);
+}
+
+#container {
+  height: calc(100vh - 10vmin - var(--control-height));
+  padding: 5vmin;
+  background-color: azure;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container .sortingElement {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-radius: 1200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 1px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#controls {
+  height: calc(var(--control-height) - 10vmin);
+  padding: 5vmin;
+  overflow: auto;
+}
+
+#controls span {
+  padding: 5px 15px;
+}
+/*# sourceMappingURL=sorting.css.map */
