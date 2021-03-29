@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: wheat;
+}
+
+nav, main {
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+}
+
+nav {
+  height: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.5);
+  background-image: radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.5), transparent);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pad {
+  margin: 10px;
+  padding: 60px;
+  margin: 0;
+}
+
+.pad:hover img {
+  opacity: .5;
+}
+
+.card {
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card a {
+  text-decoration: inherit;
+}
+
+.card a img {
+  max-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .2;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.card a span {
+  font-size: 32px;
+  font-family: monospace;
+  font-weight: bold;
+  word-break: break-word;
+  color: midnightblue;
+  text-transform: capitalize;
+  line-height: normal;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+.circle {
+  position: fixed;
+  z-index: -2;
+  margin: 0;
+  padding: 0;
+}
+
+#circle1 {
+  background-color: tomato;
+  top: -50vmax;
+  left: -50vmax;
+  width: 90vmax;
+  height: 90vmax;
+  border-radius: 50%;
+}
+
+#circle2 {
+  background-color: cornflowerblue;
+  bottom: 5vmax;
+  right: 10vmax;
+  width: 40vmax;
+  height: 40vmax;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
